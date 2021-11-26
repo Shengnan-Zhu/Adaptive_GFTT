@@ -1,0 +1,15 @@
+#pragma once
+
+#include <opencv2/opencv.hpp>
+
+using namespace std;
+
+
+class MY_GFTT{
+    public:
+
+        void goodFeaturesToTrack(cv::InputArray _image, cv::OutputArray _corners, int maxCorners, 
+                                    double qualityLevel, double minDistance, cv::InputArray _mask = cv::noArray(), int rejectBorder = 1,
+                                    int blockSize = 3, int gradientSize = 3,
+                                    bool useHarrisDetector = false, double harrisK = 0.04);
+};
